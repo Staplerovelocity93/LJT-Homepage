@@ -11,24 +11,22 @@ redirect_from:
 
 ## About Me
 
-I am a first-year PhD candidate at the HKUST NLP Group, supervised by **Professor Junxian He**. I am pursuing a Ph.D. in Computer Science at the Hong Kong University of Science and Technology (2024–Present).
+I am a first-year PhD candidate at HKUST NLP Group, supervised by **Professor Junxian He**. I am pursuing a **Ph.D. in Computer Science (2024-Present)** at the Hong Kong University of Science and Technology.
 
 My research focuses on natural language processing and machine learning. My research interests include LLM Reasoning and Reinforcement Learning, Hallucination in Vision-Language Models (VLM), and LLM Truthfulness and Interpretability.
 
 ## Education
 
-- **Ph.D. in Computer Science**, Hong Kong University of Science and Technology, 2024–Present.
-- **B.Eng.**, Shanghai Jiao Tong University, 2020–2024. I graduated from Shanghai Jiao Tong University in June 2024.
-- **Zhiyuan Honor Scholarship**, Shanghai Jiao Tong University.
-- **Ph.D. supervisor:** Professor Junxian He (HKUST NLP Group). Professor Junxian He also previously advised my undergraduate studies at SJTU.
+- **Ph.D. in Computer Science (2024-Present)**, Hong Kong University of Science and Technology.
+- **B.Eng. (2020-2024)**, Shanghai Jiao Tong University. Graduated from Shanghai Jiao Tong University in June 2024.
+- **Zhiyuan Honor Scholarship at Shanghai Jiao Tong University.**
+- **PhD supervisor:** Professor Junxian He (HKUST NLP Group). Professor Junxian He also previously advised my undergraduate studies at SJTU.
 
 ## Research Experience
 
-- **Research Intern, MINIMAX** — February 2025–Present.
-- **Research Intern, Tencent WXG** — June 2024–September 2024. Advised by Zifei Shan.
-- **Research Intern, Shanghai AI Lab** — June 2023–December 2023. Advised by Prof. Yu Cheng.
-
-My research focuses on natural language processing and machine learning. I am interested in LLM reasoning and reinforcement learning, hallucination in vision-language models (VLM), and LLM truthfulness and interpretability.
+- **Research Intern at MINIMAX (February 2025 - Present).**
+- **Research Intern at Tencent WXG (June 2024 - September 2024)**, advised by Zifei Shan.
+- **Research Intern at Shanghai AI Lab (June 2023 - December 2023)**, advised by Prof. Yu Cheng.
 
 ## Research Interests and Skills
 
