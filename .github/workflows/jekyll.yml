@@ -43,6 +43,21 @@ jobs:
       - name: Minify JS files
         run: |
           uglifyjs assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js
+      - name: Build with Jekyll (validation)
+        run: bundle exec jekyll build --baseurl "/LJT-Homepage"
+        env:
+          JEKYLL_ENV: production
+      - name: Verify generated publication pages
+        run: |
+          test -f _site/publications/index.html
+          test -f _site/publications/synlogic/index.html
+          test -f _site/publications/perception-bottleneck/index.html
+          test -f _site/publications/universal-truthfulness-hyperplane/index.html
+          test -f _site/publications/in-context-sharpness/index.html
+          test -f _site/publications/c-eval/index.html
+          test -f _site/publications/composing-parameter-efficient-modules/index.html
+          grep -q "Junteng Liu" _site/index.html
+          grep -q "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond" _site/index.html
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v6.0.0
