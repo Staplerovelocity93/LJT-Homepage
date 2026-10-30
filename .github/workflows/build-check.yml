@@ -1,0 +1,44 @@
+name: Jekyll Build Check
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1.328.0
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 0
+      - name: Install UglifyJS
+        run: npm install -g uglify-js
+      - name: Minify JS files
+        run: |
+          uglifyjs assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "/LJT-Homepage"
+        env:
+          JEKYLL_ENV: production
+      - name: Verify generated publication pages
+        run: |
+          test -f _site/publications/index.html
+          test -f _site/publications/synlogic/index.html
+          test -f _site/publications/perception-bottleneck/index.html
+          test -f _site/publications/universal-truthfulness-hyperplane/index.html
+          test -f _site/publications/in-context-sharpness/index.html
+          test -f _site/publications/c-eval/index.html
+          test -f _site/publications/composing-parameter-efficient-modules/index.html
+          grep -q "Junteng Liu" _site/index.html
+          grep -q "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond" _site/index.html
